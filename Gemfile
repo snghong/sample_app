@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rexml', '~> 3.2', '>= 3.2.4'
+gem 'bcrypt', '3.1.16 '
 gem 'rails',      '6.1.3.1'
 gem 'bootstrap-sass',       '>=3.2.0.0'
 gem 'puma',       '5.2.2'
