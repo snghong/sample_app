@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rexml', '~> 3.2', '>= 3.2.4'
 gem 'bcrypt', '3.1.16'
+gem 'faker'
+gem 'will_paginate', '3.3.0'
+gem 'bootstrap-will_paginate', '0.0.10'
 gem 'rails',      '6.1.3.1'
 gem 'bootstrap-sass',       '>=3.2.0.0'
 gem 'puma',       '5.2.2'
@@ -19,7 +22,7 @@ end
 
 group :development do
   gem 'web-console',           '4.1.0'
-  gem 'listen',                '3.4.1'
+  gem 'listen',                '>=3.4.1'
   gem 'spring',                '2.1.1'
   gem 'spring-watcher-listen', '2.0.1'
 end
@@ -29,7 +32,7 @@ group :test do
   gem 'selenium-webdriver',       '3.142.7'
   gem 'webdrivers',               '4.6.0'
   gem 'rails-controller-testing', '1.0.5'
-  gem 'minitest',                 '5.11.3'
+  gem 'minitest',                 '>=5.11.3'
   gem 'minitest-reporters',       '1.3.8'
   gem 'guard',                    '2.16.2'
   gem 'guard-minitest',           '2.4.6'
