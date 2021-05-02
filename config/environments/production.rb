@@ -7,11 +7,11 @@ Rails.application.configure do
   host = 'https://enigmatic-wave-46036.herokuapp.com/'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :address        => 'smtp.sendgrid.net',
+    :address        => 'smtp.mailgun.org',
     :port           => '587',
     :authentication => :plain,
-    :user_name      => ENV['SENDGRID_USERNAME'],
-    :password       => ENV['SENDGRID_PASSWORD'],
+    :user_name      => 'postmaster@sandbox5da2b54893624af8bcab980e672f38e9.mailgun.org',
+    :password       => '6350adc79b4075653fbc473d7d9ed0d0-4b1aa784-2fdbe922',
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
